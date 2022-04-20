@@ -238,9 +238,9 @@ select {
 
 .section__2 {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding-top: 112px; }
   .section__2 h3 {
-    padding-top: 112px;
     color: #ffffff;
     font-weight: 400;
     font-size: 32px;
@@ -323,5 +323,106 @@ select {
       opacity: 0.6; }
     .section__2__btn__catalog button img {
       margin-right: 14px; }
+
+.section__3 {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column; }
+  .section__3 h3 {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    margin-bottom: 40px; }
+
+.section__3__wrap__bg {
+  display: flex;
+  max-width: 1280px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1; }
+  .section__3__wrap__bg .bg_s3 {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    left: 5%;
+    top: 10%;
+    background: #FFFFFF;
+    mix-blend-mode: overlay;
+    filter: blur(600px); }
+
+.wrap__description__goods {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+.line__description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .line__description p {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 170%; }
+  .line__description div {
+    width: 50%;
+    padding: 48px;
+    border: 1px solid rgba(255, 255, 255, 0.1); }
+    .line__description div:first-child {
+      background: #0C1D37; }
+
+.link__product__s3 a {
+  position: relative;
+  display: block; }
+.link__product__s3 button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 30px;
+  padding: 0 18px;
+  color: #ffffff;
+  background: #FF7A00;
+  border: none; }
+  .link__product__s3 button:hover {
+    opacity: 0.8; }
+  .link__product__s3 button:active {
+    opacity: 0.6; }
+
+.line__description__1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .line__description__1 p {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%; }
+  .line__description__1 div {
+    width: 516px;
+    padding: 48px;
+    border: 1px solid rgba(255, 255, 255, 0.1); }
+    .line__description__1 div:last-child {
+      background: #0C1D37; }
+
+.link__product__s31 {
+  width: 764px !important; }
+  .link__product__s31 a {
+    position: relative;
+    display: block; }
+  .link__product__s31 button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    padding: 0 18px;
+    color: #ffffff;
+    background: #FF7A00;
+    border: none; }
+    .link__product__s31 button:hover {
+      opacity: 0.8; }
+    .link__product__s31 button:active {
+      opacity: 0.6; }
 
 /*# sourceMappingURL=style.css.map */
