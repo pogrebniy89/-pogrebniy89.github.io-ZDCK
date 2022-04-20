@@ -333,3 +333,127 @@
     }
   }
 }
+
+.section__4 {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    margin-bottom: 40px;
+  }
+}
+
+.link__info__s4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 426px);
+  margin-bottom: 120px !important;
+
+  li {
+    width: 426px;
+    height: 454px;
+    border: 1px solid #3B4C64;
+    padding-top: 40px;
+    transition: 0.8s;
+    cursor: pointer;
+
+    &:hover {
+      background: $firm;
+      transition: 0.8s;
+
+      p{
+        color: #ffffff;
+      }
+
+      .img__s4__1 {
+        background: center/contain url("../img/missile.svg") no-repeat;
+        transition: 0.8s;
+      }
+
+      .img__s4__2 {
+        background: center/contain url("../img/ok_w.svg") no-repeat;
+        transition: 0.8s;
+      }
+
+      .img__s4__3 {
+        background: center/contain url("../img/file_w.svg") no-repeat;
+        transition: 0.8s;
+      }
+
+      .img__s4__4 {
+        background: center/contain url("../img/certificate_w.svg") no-repeat;
+        transition: 0.8s;
+      }
+
+      .img__s4__5 {
+        background: center/contain url("../img/settings_w.svg") no-repeat;
+        transition: 0.8s;
+      }
+
+
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+
+      .img__s4__1 {
+        background: center/contain url("../img/missile_o.svg") no-repeat;
+        transition: 0.8s;
+      }
+
+      .img__s4__2 {
+        background: center/contain url("../img/ok.svg") no-repeat;
+        transition: 0.8s;
+      }
+
+      .img__s4__3 {
+        background: center/contain url("../img/file.svg") no-repeat;
+        transition: 0.8s;
+      }
+
+      .img__s4__4 {
+        background: center/contain url("../img/certificate.svg") no-repeat;
+        transition: 0.8s;
+      }
+
+      .img__s4__5 {
+        background: center/contain url("../img/settings.svg") no-repeat;
+        transition: 0.8s;
+      }
+
+      div {
+        margin-left: 40px;
+        margin-bottom: 57px;
+        width: 83px;
+        height: 82px;
+      }
+
+
+      h4 {
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 120%;
+        margin-left: 40px;
+        margin-bottom: 16px;
+      }
+
+      p {
+        color: #9EA5AF;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 170%;
+        margin-left: 40px;
+        max-width: 342px;
+      }
+    }
+  }
+
+}
+
+

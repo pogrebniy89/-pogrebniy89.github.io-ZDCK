@@ -425,4 +425,84 @@ select {
     .link__product__s31 button:active {
       opacity: 0.6; }
 
+.section__4 {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column; }
+  .section__4 h3 {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    margin-bottom: 40px; }
+
+.link__info__s4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 426px);
+  margin-bottom: 120px !important; }
+  .link__info__s4 li {
+    width: 426px;
+    height: 454px;
+    border: 1px solid #3B4C64;
+    padding-top: 40px;
+    transition: 0.8s;
+    cursor: pointer; }
+    .link__info__s4 li:hover {
+      background: #FF7A00;
+      transition: 0.8s; }
+      .link__info__s4 li:hover p {
+        color: #ffffff; }
+      .link__info__s4 li:hover .img__s4__1 {
+        background: center/contain url("../img/missile.svg") no-repeat;
+        transition: 0.8s; }
+      .link__info__s4 li:hover .img__s4__2 {
+        background: center/contain url("../img/ok_w.svg") no-repeat;
+        transition: 0.8s; }
+      .link__info__s4 li:hover .img__s4__3 {
+        background: center/contain url("../img/file_w.svg") no-repeat;
+        transition: 0.8s; }
+      .link__info__s4 li:hover .img__s4__4 {
+        background: center/contain url("../img/certificate_w.svg") no-repeat;
+        transition: 0.8s; }
+      .link__info__s4 li:hover .img__s4__5 {
+        background: center/contain url("../img/settings_w.svg") no-repeat;
+        transition: 0.8s; }
+    .link__info__s4 li a {
+      display: block;
+      text-decoration: none; }
+      .link__info__s4 li a .img__s4__1 {
+        background: center/contain url("../img/missile_o.svg") no-repeat;
+        transition: 0.8s; }
+      .link__info__s4 li a .img__s4__2 {
+        background: center/contain url("../img/ok.svg") no-repeat;
+        transition: 0.8s; }
+      .link__info__s4 li a .img__s4__3 {
+        background: center/contain url("../img/file.svg") no-repeat;
+        transition: 0.8s; }
+      .link__info__s4 li a .img__s4__4 {
+        background: center/contain url("../img/certificate.svg") no-repeat;
+        transition: 0.8s; }
+      .link__info__s4 li a .img__s4__5 {
+        background: center/contain url("../img/settings.svg") no-repeat;
+        transition: 0.8s; }
+      .link__info__s4 li a div {
+        margin-left: 40px;
+        margin-bottom: 57px;
+        width: 83px;
+        height: 82px; }
+      .link__info__s4 li a h4 {
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 120%;
+        margin-left: 40px;
+        margin-bottom: 16px; }
+      .link__info__s4 li a p {
+        color: #9EA5AF;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 170%;
+        margin-left: 40px;
+        max-width: 342px; }
+
 /*# sourceMappingURL=style.css.map */
