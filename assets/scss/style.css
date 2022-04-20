@@ -1,0 +1,327 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0; }
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Ubuntu', sans-serif; }
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none; }
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em; }
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+.wrap__1 {
+  background-color: #0C1D37;
+  mix-blend-mode: multiply; }
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+.wrap__point {
+  position: relative;
+  max-width: 1280px;
+  display: flex;
+  flex-shrink: 1; }
+  .wrap__point .orange__point {
+    display: flex;
+    flex-shrink: 1;
+    position: absolute;
+    width: 50%;
+    height: 820px;
+    right: 0;
+    top: -350px;
+    z-index: -9999;
+    /* Фирменный */
+    background: #FF7A00;
+    filter: blur(500px); }
+
+.wrap__2 {
+  background-color: #182841; }
+
+.contact__info {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: row; }
+  .contact__info .contact__item {
+    display: flex;
+    flex-direction: row; }
+    .contact__info .contact__item li {
+      margin-right: 20px;
+      color: #7A8396;
+      font-weight: 400;
+      font-size: 14px; }
+    .contact__info .contact__item a {
+      text-decoration: none;
+      color: #7A8396; }
+  .contact__info .contact__item__1 {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto; }
+    .contact__info .contact__item__1 li {
+      font-weight: 400;
+      font-size: 14px; }
+    .contact__info .contact__item__1 li + li {
+      margin-left: 32px; }
+    .contact__info .contact__item__1 a {
+      text-decoration: none;
+      color: #FFFFFF; }
+      .contact__info .contact__item__1 a:first-child {
+        font-weight: 600; }
+    .contact__info .contact__item__1 a + a {
+      margin-left: 10px; }
+
+.line {
+  width: 100%;
+  opacity: 0.15;
+  /* Белый */
+  border: 1px solid #ffffff; }
+
+.header {
+  height: 109px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .header a {
+    height: 80%;
+    display: flex; }
+
+.header__link {
+  display: flex;
+  flex-direction: row;
+  height: 100%; }
+  .header__link li {
+    height: 100%; }
+  .header__link li + li {
+    margin-left: 36px; }
+  .header__link a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative; }
+    .header__link a:hover:after {
+      content: '';
+      border-bottom: 5px solid #FF7A00;
+      width: 100%;
+      position: absolute;
+      bottom: 0; }
+    .header__link a:hover {
+      color: #FF7A00; }
+    .header__link a:active {
+      opacity: 0.5; }
+  .header__link img {
+    display: inline-block;
+    margin-right: 8px; }
+  .header__link .search__line__wrap {
+    position: relative; }
+  .header__link .search__line {
+    position: absolute;
+    top: 59px;
+    left: 12px; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.section__1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.section__1__content_1 {
+  width: 524px;
+  color: #ffffff; }
+  .section__1__content_1 h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 120%;
+    padding-top: 40px;
+    max-width: 450px; }
+  .section__1__content_1 p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    padding-top: 16px; }
+  .section__1__content_1 .section__1__buttons {
+    padding-top: 40px;
+    padding-bottom: 56px; }
+    .section__1__content_1 .section__1__buttons button {
+      height: 46px;
+      outline: none;
+      background-color: transparent;
+      color: #FF7A00;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 120%;
+      padding: 0 24px;
+      border: 1.5px solid #FF7A00;
+      border-radius: 2px;
+      cursor: pointer; }
+      .section__1__content_1 .section__1__buttons button:hover {
+        background-color: #FF7A00;
+        color: #ffffff; }
+      .section__1__content_1 .section__1__buttons button:active {
+        opacity: 0.8; }
+      .section__1__content_1 .section__1__buttons button:first-child {
+        margin-right: 16px; }
+
+.section__1__content_2 {
+  margin-left: 85px;
+  margin-top: 49px; }
+
+.section__2 {
+  display: flex;
+  flex-direction: column; }
+  .section__2 h3 {
+    padding-top: 112px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%; }
+  .section__2 .section__2__catalog {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 320px); }
+    .section__2 .section__2__catalog li {
+      max-width: 320px;
+      height: 426px;
+      border: 1px solid #3B4C64;
+      padding-top: 32px;
+      padding-bottom: 28px;
+      transition: 0.8s; }
+      .section__2 .section__2__catalog li:hover {
+        transition: 0.8s;
+        background: #FF7A00; }
+        .section__2 .section__2__catalog li:hover p {
+          color: #ffffff; }
+        .section__2 .section__2__catalog li:hover button {
+          background: #F55800; }
+      .section__2 .section__2__catalog li a {
+        display: block;
+        width: 256px;
+        margin-left: 32px;
+        text-decoration: none; }
+        .section__2 .section__2__catalog li a img {
+          margin-bottom: 24px; }
+      .section__2 .section__2__catalog li span {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        color: #FFFFFF;
+        margin-top: 24px; }
+      .section__2 .section__2__catalog li p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        color: #7A8396;
+        margin-top: 8px; }
+      .section__2 .section__2__catalog li .cost__price {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        color: #FF7A00;
+        margin-top: 16px; }
+      .section__2 .section__2__catalog li button {
+        color: #ffffff;
+        height: 34px;
+        background: #FF7A00;
+        padding: 0 18px;
+        border: none;
+        margin-top: 24px;
+        margin-left: 32px;
+        cursor: pointer; }
+        .section__2 .section__2__catalog li button:hover {
+          opacity: 0.8; }
+        .section__2 .section__2__catalog li button:active {
+          opacity: 0.6; }
+
+.section__2__btn__catalog {
+  margin-top: 32px; }
+  .section__2__btn__catalog button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 52px;
+    background: #FF7A00;
+    border-radius: 2px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    border: none; }
+    .section__2__btn__catalog button:hover {
+      opacity: 0.8; }
+    .section__2__btn__catalog button:active {
+      opacity: 0.6; }
+    .section__2__btn__catalog button img {
+      margin-right: 14px; }
+
+/*# sourceMappingURL=style.css.map */

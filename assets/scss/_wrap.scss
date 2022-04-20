@@ -1,0 +1,39 @@
+.wrap__1 {
+  background-color: $bg-header;
+  mix-blend-mode: multiply;
+
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.wrap__point{
+  position: relative;
+  max-width: 1280px;
+  display: flex;
+  flex-shrink: 1;
+
+  .orange__point{
+    display: flex;
+    flex-shrink: 1;
+    position: absolute;
+    width: 50%;
+    height: 820px;
+    right: 0;
+    top: -350px;
+    z-index: -9999;
+    /* Фирменный */
+
+    background: $firm;
+    filter: blur(500px);
+  }
+}
+
+.wrap__2{
+  background-color: $bg-all;
+}
