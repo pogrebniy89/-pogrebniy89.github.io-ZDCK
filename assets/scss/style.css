@@ -98,7 +98,10 @@ select {
     filter: blur(500px); }
 
 .wrap__2 {
-  background-color: #182841; }
+  background-color: #0c1d37; }
+
+.wrap__3 {
+  background: #182841; }
 
 .contact__info {
   height: 40px;
@@ -575,12 +578,111 @@ select {
   line-height: 120%;
   color: #FFFFFF;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-bottom: 120px; }
   .section__5__btn__news button:hover {
     opacity: 0.8; }
   .section__5__btn__news button:active {
     opacity: 0.6; }
   .section__5__btn__news button img {
     margin-right: 12px; }
+
+.section__6 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 48px; }
+  .section__6 h3 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 120%;
+    color: #FFFFFF;
+    padding-bottom: 33px; }
+
+.section__6__wrap__form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 848px; }
+  .section__6__wrap__form button {
+    padding: 0 24px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+    background: #FF7A00;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 54px;
+    float: left; }
+    .section__6__wrap__form button img {
+      margin-right: 12px; }
+
+.s6__input__decor {
+  width: 416px;
+  height: 62px;
+  background: #FFFFFF;
+  opacity: 0.3;
+  backdrop-filter: blur(40px);
+  border-radius: 2px;
+  padding: 19px 24px;
+  margin-bottom: 24px; }
+  .s6__input__decor::placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 126%;
+    color: #9EA5AF; }
+
+#s6__input__email {
+  margin-left: 12px; }
+
+#s6__input__textArea {
+  width: 848px;
+  max-width: 848px;
+  height: 124px;
+  padding: 19px 24px;
+  resize: none;
+  background: #FFFFFF;
+  opacity: 0.3;
+  backdrop-filter: blur(40px);
+  border-radius: 2px;
+  margin-bottom: 24px; }
+  #s6__input__textArea::placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 126%;
+    color: #9EA5AF; }
+
+.wrap__checkbox__s6 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px; }
+  .wrap__checkbox__s6 p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    color: #9EA5AF;
+    margin-left: 12px; }
+    .wrap__checkbox__s6 p span {
+      color: #FF7A00; }
+
+#s6__input__checkbox {
+  display: none; }
+  #s6__input__checkbox:checked + label {
+    background: rgba(157, 164, 175, 0.1) center/70% url("../img/Checkmark.svg") no-repeat; }
+
+.s6__input__checkbox__decor {
+  width: 20px;
+  height: 20px;
+  background: rgba(157, 164, 175, 0.1);
+  border-radius: 1.42857px;
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */
