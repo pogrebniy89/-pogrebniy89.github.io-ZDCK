@@ -111,9 +111,16 @@ select {
   display: flex;
   align-items: center;
   flex-direction: row; }
+  @media screen and (max-width: 1023px) {
+    .contact__info {
+      height: 60px; } }
   .contact__info .contact__item {
     display: flex;
     flex-direction: row; }
+    @media screen and (max-width: 1023px) {
+      .contact__info .contact__item {
+        align-items: center;
+        flex-shrink: 0; } }
     .contact__info .contact__item li {
       margin-right: 20px;
       color: #7A8396;
@@ -138,6 +145,9 @@ select {
         font-weight: 600; }
     .contact__info .contact__item__1 a + a {
       margin-left: 10px; }
+      @media screen and (max-width: 1023px) {
+        .contact__info .contact__item__1 a + a {
+          margin-left: 0; } }
 
 .line {
   width: 100%;
@@ -154,6 +164,18 @@ select {
     height: 80%;
     display: flex; }
 
+@media screen and (max-width: 1023px) {
+  .logo__wrap {
+    display: none !important; } }
+
+.logo_768_wrap {
+  display: none; }
+  .logo_768_wrap img:first-child {
+    margin-right: 10px; }
+  @media screen and (max-width: 1023px) {
+    .logo_768_wrap {
+      display: flex !important; } }
+
 .header__link {
   display: flex;
   flex-direction: row;
@@ -165,6 +187,9 @@ select {
     @media screen and (max-width: 1126px) {
       .header__link li + li {
         margin-left: 20px; } }
+    @media screen and (max-width: 1023px) {
+      .header__link li + li {
+        margin-left: 10px; } }
   .header__link a {
     text-decoration: none;
     color: #FFFFFF;
@@ -401,6 +426,12 @@ select {
     border: 1px solid rgba(255, 255, 255, 0.1); }
     .line__description div:first-child {
       background: #0C1D37; }
+    @media screen and (max-width: 1023px) {
+      .line__description div {
+        width: 100%; } }
+  @media screen and (max-width: 1023px) {
+    .line__description img {
+      width: 100%; } }
 
 .link__product__s3 a {
   position: relative;
@@ -422,7 +453,7 @@ select {
 .line__description__1 {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap-reverse; }
   .line__description__1 p {
     color: #ffffff;
     font-weight: 400;
@@ -438,6 +469,9 @@ select {
     @media screen and (max-width: 1280px) {
       .line__description__1 div {
         width: 50%; } }
+    @media screen and (max-width: 1023px) {
+      .line__description__1 div {
+        width: 100%; } }
     .line__description__1 div:last-child {
       background: #0C1D37; }
 
@@ -449,6 +483,9 @@ select {
   @media screen and (max-width: 1280px) {
     .link__product__s31 {
       width: 50% !important; } }
+  @media screen and (max-width: 1023px) {
+    .link__product__s31 {
+      width: 100% !important; } }
   .link__product__s31 a {
     position: relative;
     display: block; }
@@ -647,6 +684,14 @@ select {
   flex-wrap: wrap;
   max-width: 848px;
   margin-bottom: 48px; }
+  .section__6__wrap__form form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%; }
+    @media screen and (max-width: 1023px) {
+      .section__6__wrap__form form {
+        justify-content: space-between; } }
   .section__6__wrap__form button {
     padding: 0 24px;
     height: 48px;
@@ -676,6 +721,9 @@ select {
   margin-bottom: 24px;
   border: none;
   color: #9EA5AF; }
+  @media screen and (max-width: 1023px) {
+    .s6__input__decor {
+      width: 48%; } }
   .s6__input__decor::placeholder {
     font-weight: 400;
     font-size: 20px;
@@ -684,6 +732,9 @@ select {
 
 #s6__input__email {
   margin-left: 12px; }
+  @media screen and (max-width: 1023px) {
+    #s6__input__email {
+      margin-left: 0; } }
 
 #s6__input__textArea {
   width: 848px;
@@ -697,6 +748,9 @@ select {
   margin-bottom: 24px;
   border: none;
   color: #9EA5AF; }
+  @media screen and (max-width: 1023px) {
+    #s6__input__textArea {
+      width: 100%; } }
   #s6__input__textArea::placeholder {
     font-weight: 400;
     font-size: 20px;
@@ -751,6 +805,9 @@ select {
     left: 375px;
     border: none;
     cursor: pointer; }
+    @media screen and (max-width: 1023px) {
+      .footer__first__line button {
+        left: 324px; } }
     .footer__first__line button:hover {
       opacity: 0.8; }
     .footer__first__line button:active {
@@ -767,6 +824,9 @@ select {
   border: none;
   padding-left: 20px;
   padding-right: 40px; }
+  @media screen and (max-width: 1023px) {
+    #search__footer {
+      width: 365px; } }
 
 .footer__second__line {
   display: flex;
@@ -844,6 +904,7 @@ select {
   @media screen and (max-width: 1126px) {
     .footer__second__right__item {
       flex-direction: row;
+      flex-wrap: wrap;
       margin-left: 0; } }
   .footer__second__right__item li {
     font-weight: 400;
