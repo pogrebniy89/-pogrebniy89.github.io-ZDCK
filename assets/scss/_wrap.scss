@@ -11,16 +11,17 @@
   width: 100%;
   margin: 0 auto;
   position: relative;
+
+  @media  screen and (max-width: 1300px) {
+    padding: 0 15px;
+  }
 }
+
 .wrap__point{
   position: relative;
   max-width: 1280px;
   display: flex;
   flex-shrink: 1;
-
-  @media screen and (max-width: 1300px) {
-    padding: 0 15px;
-  }
 
   .orange__point{
     display: flex;

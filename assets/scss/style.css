@@ -78,6 +78,9 @@ select {
   width: 100%;
   margin: 0 auto;
   position: relative; }
+  @media screen and (max-width: 1300px) {
+    .content-wrapper {
+      padding: 0 15px; } }
 
 .wrap__point {
   position: relative;
@@ -159,6 +162,9 @@ select {
     height: 100%; }
   .header__link li + li {
     margin-left: 36px; }
+    @media screen and (max-width: 1126px) {
+      .header__link li + li {
+        margin-left: 20px; } }
   .header__link a {
     text-decoration: none;
     color: #FFFFFF;
@@ -196,17 +202,30 @@ select {
 .section__1 {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap-reverse;
+  justify-content: center; }
 
 .section__1__content_1 {
   width: 524px;
   color: #ffffff; }
+  @media screen and (max-width: 1300px) {
+    .section__1__content_1 {
+      width: 500px; } }
+  @media screen and (max-width: 1280px) {
+    .section__1__content_1 {
+      width: 444px; } }
+  @media screen and (max-width: 1159px) {
+    .section__1__content_1 {
+      width: 100%; } }
   .section__1__content_1 h2 {
     font-weight: 500;
     font-size: 32px;
     line-height: 120%;
     padding-top: 40px;
     max-width: 450px; }
+    @media screen and (max-width: 1159px) {
+      .section__1__content_1 h2 {
+        width: 100%; } }
   .section__1__content_1 p {
     font-weight: 400;
     font-size: 16px;
@@ -238,6 +257,12 @@ select {
 .section__1__content_2 {
   margin-left: 85px;
   margin-top: 49px; }
+  @media screen and (max-width: 1224px) {
+    .section__1__content_2 {
+      margin-left: 45px; } }
+  @media screen and (max-width: 1185px) {
+    .section__1__content_2 {
+      margin-left: 20px; } }
 
 .section__2 {
   display: flex;
@@ -251,7 +276,8 @@ select {
   .section__2 .section__2__catalog {
     padding-top: 40px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 320px); }
+    grid-template-columns: repeat(auto-fill, 320px);
+    justify-content: center; }
     .section__2 .section__2__catalog li {
       max-width: 320px;
       height: 426px;
@@ -406,11 +432,23 @@ select {
     width: 516px;
     padding: 48px;
     border: 1px solid rgba(255, 255, 255, 0.1); }
+    @media screen and (max-width: 1300px) {
+      .line__description__1 div {
+        width: 501px; } }
+    @media screen and (max-width: 1280px) {
+      .line__description__1 div {
+        width: 50%; } }
     .line__description__1 div:last-child {
       background: #0C1D37; }
 
 .link__product__s31 {
   width: 764px !important; }
+  @media screen and (max-width: 1300px) {
+    .link__product__s31 {
+      width: 749px !important; } }
+  @media screen and (max-width: 1280px) {
+    .link__product__s31 {
+      width: 50% !important; } }
   .link__product__s31 a {
     position: relative;
     display: block; }
@@ -441,7 +479,8 @@ select {
 
 .link__info__s4 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 426px); }
+  grid-template-columns: repeat(auto-fill, 426px);
+  justify-content: center; }
   .link__info__s4 li {
     width: 426px;
     height: 454px;
@@ -521,7 +560,8 @@ select {
 .section__5__news {
   padding-bottom: 32px !important;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 320px); }
+  grid-template-columns: repeat(auto-fill, 320px);
+  justify-content: center; }
   .section__5__news li {
     max-width: 320px;
     height: 450px;
@@ -737,6 +777,15 @@ select {
   max-width: 1000px;
   width: 100%;
   border-right: 1px solid #3B4C64; }
+  @media screen and (max-width: 1300px) {
+    .footer__second__left__item {
+      max-width: 860px; } }
+  @media screen and (max-width: 1146px) {
+    .footer__second__left__item {
+      max-width: 840px; } }
+  @media screen and (max-width: 1126px) {
+    .footer__second__left__item {
+      border-right: none; } }
 
 .footer__catalog__link {
   display: flex;
@@ -792,6 +841,10 @@ select {
   flex-direction: column;
   margin-left: 40px;
   margin-top: 32px; }
+  @media screen and (max-width: 1126px) {
+    .footer__second__right__item {
+      flex-direction: row;
+      margin-left: 0; } }
   .footer__second__right__item li {
     font-weight: 400;
     font-size: 24px;
@@ -805,10 +858,22 @@ select {
       margin-top: -5px !important;
       display: block; }
 
+@media screen and (max-width: 1126px) {
+  .footer__contact__item__1 li {
+    width: 277px; } }
+@media screen and (max-width: 1126px) {
+  .footer__contact__item__1 {
+    display: flex; } }
+
 .footer__wrap__address {
   display: flex;
   flex-direction: row;
-  margin-top: 73px; }
+  margin-top: 73px;
+  margin-bottom: 32px; }
+  @media screen and (max-width: 1126px) {
+    .footer__wrap__address {
+      margin-top: 0;
+      width: 277px; } }
   .footer__wrap__address span {
     font-weight: 400;
     font-size: 20px;
