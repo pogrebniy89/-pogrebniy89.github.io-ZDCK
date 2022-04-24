@@ -954,21 +954,9 @@ select {
     display: block;
     position: absolute;
     top: 12px;
-    left: 375px;
+    right: 10px;
     border: none;
     cursor: pointer; }
-    @media screen and (max-width: 1023px) {
-      .footer__first__line button {
-        left: 324px; } }
-    @media screen and (max-width: 767px) {
-      .footer__first__line button {
-        left: 355px; } }
-    @media screen and (max-width: 424px) {
-      .footer__first__line button {
-        left: 310px; } }
-    @media screen and (max-width: 374px) {
-      .footer__first__line button {
-        left: 255px; } }
     .footer__first__line button:hover {
       opacity: 0.8; }
     .footer__first__line button:active {

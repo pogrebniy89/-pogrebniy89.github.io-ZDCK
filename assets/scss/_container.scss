@@ -860,26 +860,9 @@
     display: block;
     position: absolute;
     top: 12px;
-    left: 375px;
+    right: 10px;
     border: none;
     cursor: pointer;
-
-    @media screen and (max-width: 1023px) {
-      left: 324px;
-    }
-
-    @media screen and (max-width: 767px) {
-      left: 355px;
-    }
-
-    @media screen and (max-width: 424px) {
-      left: 310px;
-    }
-
-    @media screen and (max-width: 374px) {
-      left: 255px;
-    }
-
 
     &:hover {
       opacity: 0.8;
