@@ -815,6 +815,10 @@ select {
     margin-right: 54px;
     float: left;
     cursor: pointer; }
+    @media screen and (max-width: 767px) {
+      .section__6__wrap__form button {
+        width: 100%;
+        margin-right: 0; } }
     .section__6__wrap__form button img {
       margin-right: 12px; }
 
@@ -831,6 +835,9 @@ select {
   @media screen and (max-width: 1023px) {
     .s6__input__decor {
       width: 48%; } }
+  @media screen and (max-width: 767px) {
+    .s6__input__decor {
+      width: 100%; } }
   .s6__input__decor::placeholder {
     font-weight: 400;
     font-size: 20px;
@@ -868,13 +875,17 @@ select {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 15px; }
+  margin-top: 15px;
+  flex-shrink: 0; }
   .wrap__checkbox__s6 p {
     font-weight: 400;
     font-size: 12px;
     line-height: 120%;
     color: #9EA5AF;
     margin-left: 12px; }
+    @media screen and (max-width: 767px) {
+      .wrap__checkbox__s6 p {
+        width: 300px; } }
     .wrap__checkbox__s6 p span {
       color: #FF7A00; }
 
@@ -915,6 +926,9 @@ select {
     @media screen and (max-width: 1023px) {
       .footer__first__line button {
         left: 324px; } }
+    @media screen and (max-width: 767px) {
+      .footer__first__line button {
+        left: 355px; } }
     .footer__first__line button:hover {
       opacity: 0.8; }
     .footer__first__line button:active {
@@ -922,6 +936,10 @@ select {
 
 .wrap__form__6 {
   position: relative; }
+  @media screen and (max-width: 767px) {
+    .wrap__form__6 {
+      width: 100%;
+      margin-top: 10px; } }
 
 #search__footer {
   width: 416px;
@@ -934,14 +952,14 @@ select {
   @media screen and (max-width: 1023px) {
     #search__footer {
       width: 365px; } }
+  @media screen and (max-width: 767px) {
+    #search__footer {
+      width: 100%; } }
 
 .footer__second__line {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
-  @media screen and (max-width: 767px) {
-    .footer__second__line {
-      display: none; } }
 
 .footer__second__left__item {
   max-width: 1000px;
@@ -964,6 +982,12 @@ select {
   margin-top: 38px !important;
   margin-bottom: 29px !important;
   width: 100%; }
+  @media screen and (max-width: 767px) {
+    .footer__catalog__link li:nth-child(1n+2) {
+      display: none; } }
+  @media screen and (max-width: 767px) {
+    .footer__catalog__link li:last-child {
+      display: block; } }
   .footer__catalog__link li + li {
     margin-left: 33px; }
   .footer__catalog__link a {
@@ -1034,7 +1058,8 @@ select {
     width: 277px; } }
 @media screen and (max-width: 1126px) {
   .footer__contact__item__1 {
-    display: flex; } }
+    display: flex;
+    flex-wrap: wrap; } }
 
 .footer__wrap__address {
   display: flex;
