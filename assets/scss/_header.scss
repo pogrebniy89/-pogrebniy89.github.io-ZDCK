@@ -7,6 +7,9 @@
   @media screen and (max-width: 1023px) {
     height: 60px;
   }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   .contact__item {
     display: flex;
@@ -80,6 +83,10 @@
   align-items: center;
   justify-content: space-between;
 
+  @media screen and (max-width: 767px) {
+    justify-content: start;
+  }
+
   a {
     height: 80%;
     display: flex;
@@ -104,11 +111,145 @@
   }
 }
 
+.wrap__header__search{
+  position: relative;
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-left: 17px;
+  }
+
+  button{
+    display: none;
+    background: center no-repeat url('../img/Search_475.svg');
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+#header__search__form{
+  display: none;
+  position: absolute;
+  right: 0;
+
+  width: 250px;
+  height: 49px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding-left: 20px;
+  padding-right: 40px;
+  color: #9EA5AF;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 126%;
+    color: #9EA5AF;
+  }
+}
+
+#header__search{
+
+  &:checked ~ #header__search__form{
+      display: block;
+  }
+
+  &:checked ~ button{
+      display: block;
+  }
+}
+
+.wrap__header__menu767{
+  position: relative;
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-left: 17px;
+  }
+
+
+}
+
+#header__menu{
+  display: none;
+
+  &:checked ~ .header__menu__link {
+    display: block;
+  }
+}
+
+.header__menu__decor{
+  background: center/contain url('../img/Hamburger Menu_475.svg');
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.header__menu__link{
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  background: $sec__6;
+  z-index: 1000;
+
+  li{
+    margin: 10px;
+  }
+  a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &:hover{
+      color: $firm;
+    }
+  }
+
+}
+
+#header__search{
+  display: none;
+}
+.logo__wrap__425{
+  width: 24px;
+  height: 24px;
+  display: none !important;
+
+  @media screen and (max-width: 767px) {
+    display: flex !important;
+    margin-left: auto;
+  }
+}
+
+.header__search__decor{
+  background: center/contain url('../img/Search_475.svg');
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
 
 .header__link {
   display: flex;
   flex-direction: row;
   height: 100%;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   li {
     height: 100%;

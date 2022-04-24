@@ -839,6 +839,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .footer__second__left__item {

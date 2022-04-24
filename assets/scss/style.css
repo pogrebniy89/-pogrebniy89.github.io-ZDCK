@@ -114,6 +114,9 @@ select {
   @media screen and (max-width: 1023px) {
     .contact__info {
       height: 60px; } }
+  @media screen and (max-width: 767px) {
+    .contact__info {
+      display: none; } }
   .contact__info .contact__item {
     display: flex;
     flex-direction: row; }
@@ -160,6 +163,9 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  @media screen and (max-width: 767px) {
+    .header {
+      justify-content: start; } }
   .header a {
     height: 80%;
     display: flex; }
@@ -176,10 +182,111 @@ select {
     .logo_768_wrap {
       display: flex !important; } }
 
+.wrap__header__search {
+  position: relative;
+  display: none; }
+  @media screen and (max-width: 767px) {
+    .wrap__header__search {
+      display: block;
+      margin-left: 17px; } }
+  .wrap__header__search button {
+    display: none;
+    background: center no-repeat url("../img/Search_475.svg");
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    border: none;
+    cursor: pointer; }
+
+#header__search__form {
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 250px;
+  height: 49px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding-left: 20px;
+  padding-right: 40px;
+  color: #9EA5AF; }
+  #header__search__form::placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 126%;
+    color: #9EA5AF; }
+
+#header__search:checked ~ #header__search__form {
+  display: block; }
+#header__search:checked ~ button {
+  display: block; }
+
+.wrap__header__menu767 {
+  position: relative;
+  display: none; }
+  @media screen and (max-width: 767px) {
+    .wrap__header__menu767 {
+      display: block;
+      margin-left: 17px; } }
+
+#header__menu {
+  display: none; }
+  #header__menu:checked ~ .header__menu__link {
+    display: block; }
+
+.header__menu__decor {
+  background: center/contain url("../img/Hamburger Menu_475.svg");
+  width: 24px;
+  height: 24px;
+  display: block; }
+
+.header__menu__link {
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  background: #182841;
+  z-index: 1000; }
+  .header__menu__link li {
+    margin: 10px; }
+  .header__menu__link a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    .header__menu__link a:hover {
+      color: #FF7A00; }
+
+#header__search {
+  display: none; }
+
+.logo__wrap__425 {
+  width: 24px;
+  height: 24px;
+  display: none !important; }
+  @media screen and (max-width: 767px) {
+    .logo__wrap__425 {
+      display: flex !important;
+      margin-left: auto; } }
+
+.header__search__decor {
+  background: center/contain url("../img/Search_475.svg");
+  width: 24px;
+  height: 24px;
+  display: block; }
+
 .header__link {
   display: flex;
   flex-direction: row;
   height: 100%; }
+  @media screen and (max-width: 767px) {
+    .header__link {
+      display: none; } }
   .header__link li {
     height: 100%; }
   .header__link li + li {
@@ -832,6 +939,9 @@ select {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
+  @media screen and (max-width: 767px) {
+    .footer__second__line {
+      display: none; } }
 
 .footer__second__left__item {
   max-width: 1000px;
