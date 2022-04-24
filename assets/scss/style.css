@@ -365,7 +365,12 @@ select {
     padding-top: 16px; }
   .section__1__content_1 .section__1__buttons {
     padding-top: 40px;
-    padding-bottom: 56px; }
+    padding-bottom: 56px;
+    display: flex;
+    flex-direction: row; }
+    @media screen and (max-width: 374px) {
+      .section__1__content_1 .section__1__buttons {
+        justify-content: space-between; } }
     .section__1__content_1 .section__1__buttons button {
       height: 46px;
       outline: none;
@@ -385,6 +390,9 @@ select {
         opacity: 0.8; }
       .section__1__content_1 .section__1__buttons button:first-child {
         margin-right: 16px; }
+        @media screen and (max-width: 374px) {
+          .section__1__content_1 .section__1__buttons button:first-child {
+            margin-right: 0; } }
 
 .section__1__content_2 {
   margin-left: 85px;
@@ -410,6 +418,9 @@ select {
     display: grid;
     grid-template-columns: repeat(auto-fill, 320px);
     justify-content: center; }
+    @media screen and (max-width: 374px) {
+      .section__2 .section__2__catalog {
+        grid-template-columns: repeat(auto-fill, 100%); } }
     .section__2 .section__2__catalog li {
       max-width: 320px;
       height: 426px;
@@ -531,6 +542,9 @@ select {
     width: 50%;
     padding: 48px;
     border: 1px solid rgba(255, 255, 255, 0.1); }
+    @media screen and (max-width: 374px) {
+      .line__description div {
+        padding: 20px; } }
     .line__description div:first-child {
       background: #0C1D37; }
     @media screen and (max-width: 1023px) {
@@ -579,6 +593,9 @@ select {
     @media screen and (max-width: 1023px) {
       .line__description__1 div {
         width: 100%; } }
+    @media screen and (max-width: 374px) {
+      .line__description__1 div {
+        padding: 20px; } }
     .line__description__1 div:last-child {
       background: #0C1D37; }
 
@@ -625,6 +642,9 @@ select {
   display: grid;
   grid-template-columns: repeat(auto-fill, 426px);
   justify-content: center; }
+  @media screen and (max-width: 424px) {
+    .link__info__s4 {
+      grid-template-columns: repeat(auto-fill, 100%); } }
   .link__info__s4 li {
     width: 426px;
     height: 454px;
@@ -632,6 +652,10 @@ select {
     padding-top: 40px;
     transition: 0.8s;
     cursor: pointer; }
+    @media screen and (max-width: 424px) {
+      .link__info__s4 li {
+        width: 100%;
+        height: auto; } }
     .link__info__s4 li:hover {
       background: #FF7A00;
       transition: 0.8s; }
@@ -655,6 +679,10 @@ select {
     .link__info__s4 li a {
       display: block;
       text-decoration: none; }
+      @media screen and (max-width: 424px) {
+        .link__info__s4 li a {
+          margin-right: 40px;
+          margin-bottom: 40px; } }
       .link__info__s4 li a .img__s4__1 {
         background: center/contain url("../img/missile_o.svg") no-repeat;
         transition: 0.8s; }
@@ -791,6 +819,9 @@ select {
   flex-wrap: wrap;
   max-width: 848px;
   margin-bottom: 48px; }
+  @media screen and (max-width: 374px) {
+    .section__6__wrap__form {
+      width: 100%; } }
   .section__6__wrap__form form {
     display: flex;
     flex-direction: row;
@@ -886,6 +917,9 @@ select {
     @media screen and (max-width: 767px) {
       .wrap__checkbox__s6 p {
         width: 300px; } }
+    @media screen and (max-width: 374px) {
+      .wrap__checkbox__s6 p {
+        width: 250px; } }
     .wrap__checkbox__s6 p span {
       color: #FF7A00; }
 
@@ -929,6 +963,12 @@ select {
     @media screen and (max-width: 767px) {
       .footer__first__line button {
         left: 355px; } }
+    @media screen and (max-width: 424px) {
+      .footer__first__line button {
+        left: 310px; } }
+    @media screen and (max-width: 374px) {
+      .footer__first__line button {
+        left: 255px; } }
     .footer__first__line button:hover {
       opacity: 0.8; }
     .footer__first__line button:active {
