@@ -1139,12 +1139,21 @@ select {
 
 .section__2__catalog__small {
   margin-top: 32px !important;
+  margin-bottom: 104px !important;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 320px); }
+  grid-template-columns: repeat(auto-fill, 320px);
+  justify-content: center; }
+  @media screen and (max-width: 374px) {
+    .section__2__catalog__small {
+      grid-template-columns: repeat(auto-fill, 100%); } }
   .section__2__catalog__small li {
     width: 320px;
     height: 368px;
     border: 1px solid #3B4C64; }
+    @media screen and (max-width: 374px) {
+      .section__2__catalog__small li {
+        width: 100%;
+        height: auto; } }
     .section__2__catalog__small li a {
       text-decoration: none;
       display: block;
