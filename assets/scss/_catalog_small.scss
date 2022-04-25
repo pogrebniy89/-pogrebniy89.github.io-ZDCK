@@ -1,0 +1,85 @@
+//Секція 1
+
+.wrap__catalog__small__link {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.catalog__small__link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+
+    color: #FFFFFF;
+    opacity: 0.5;
+  }
+
+  span {
+    width: 16px;
+    height: 1px;
+    display: block;
+
+    background: #FFFFFF;
+    opacity: 0.5;
+  }
+
+  li + li {
+    margin-left: 8px;
+  }
+}
+
+//Секція 2
+
+.section__2__wrap__catalog__small{
+  margin-top: 56px;
+
+  h3{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120%;
+    color: #FFFFFF;
+  }
+}
+
+.section__2__catalog__small{
+  margin-top: 32px !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+
+  li{
+    width: 320px;
+    height: 368px;
+    border: 1px solid #3B4C64;
+
+    a{
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 32px;
+    }
+  }
+
+  p{
+    margin-top: 32px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+  }
+
+  span{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: $firm;
+  }
+}
